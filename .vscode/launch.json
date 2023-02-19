@@ -1,0 +1,152 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch SiShot (Debug)",
+			"request": "launch",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "SiShot Win64 Debug Build",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\EpicGames\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SiShot (DebugGame)",
+			"request": "launch",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "SiShot Win64 DebugGame Build",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\EpicGames\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SiShot (Development)",
+			"request": "launch",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "SiShot Win64 Development Build",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\EpicGames\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SiShot (Test)",
+			"request": "launch",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "SiShot Win64 Test Build",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\EpicGames\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SiShot (Shipping)",
+			"request": "launch",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "SiShot Win64 Shipping Build",
+			"args": [
+			],
+			"cwd": "D:\\EpicGames\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\EpicGames\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SiShotEditor (Debug)",
+			"request": "launch",
+			"program": "D:\\EpicGames\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+			"preLaunchTask": "SiShotEditor Win64 Debug Build",
+			"args": [
+				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\SiShot.uproject"
+			],
+			"cwd": "D:\\EpicGames\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\EpicGames\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SiShotEditor (DebugGame)",
+			"request": "launch",
+			"program": "D:\\EpicGames\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+			"preLaunchTask": "SiShotEditor Win64 DebugGame Build",
+			"args": [
+				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\SiShot.uproject"
+			],
+			"cwd": "D:\\EpicGames\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\EpicGames\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch SiShotEditor (Development)",
+			"request": "launch",
+			"program": "D:\\EpicGames\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"preLaunchTask": "SiShotEditor Win64 Development Build",
+			"args": [
+				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\SiShot.uproject"
+			],
+			"cwd": "D:\\EpicGames\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\EpicGames\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\EpicGames\\UE_5.0"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "D:\\EpicGames\\UE_5.0\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\SiShot.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "externalTerminal",
+			"stopAtEntry": false,
+			"cwd": "D:\\EpicGames\\UE_5.0"
+		}
+	]
+}
