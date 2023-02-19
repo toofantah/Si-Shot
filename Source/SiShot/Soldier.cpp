@@ -30,5 +30,35 @@ void ASoldier::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	PlayerInputComponent -> BindAxis(TEXT("MoveForward"), this, &ASoldier::MoveForward);
+	PlayerInputComponent -> BindAxis(TEXT("MoveRight"), this, &ASoldier::MoveSide);
+	PlayerInputComponent -> BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent -> BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
+	
+	PlayerInputComponent -> BindAxis(TEXT("LookRightRate"), this, &ASoldier::LookRightRate);
+	PlayerInputComponent -> BindAxis(TEXT("LookUpRate"), this, &ASoldier::LookUpRate);
+
+
+	PlayerInputComponent -> BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this,&ACharacter::Jump);
+
 }
 
+void ASoldier::MoveForward(float AxisValue)
+{
+	AddMovementInput(GetActorForwardVector() * AxisValue);
+}
+
+void ASoldier::MoveSide(float AxisValue)
+{
+	AddMovementInput(GetActorRightVector() * AxisValue);
+}
+
+void ASoldier::LookUpRate(float AxisValue)
+{
+	AddControllerPitchInput( AxisValue * RotationRate * GetWorld() -> GetDeltaSeconds());
+}
+
+void ASoldier::LookRightRate(float AxisValue)
+{
+	AddControllerYawInput( AxisValue * RotationRate * GetWorld() -> GetDeltaSeconds());
+}
