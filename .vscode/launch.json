@@ -4,7 +4,7 @@
 		{
 			"name": "Launch SiShot (Debug)",
 			"request": "launch",
-			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
 			"preLaunchTask": "SiShot Win64 Debug Build",
 			"args": [
 			],
@@ -20,7 +20,7 @@
 		{
 			"name": "Launch SiShot (DebugGame)",
 			"request": "launch",
-			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
 			"preLaunchTask": "SiShot Win64 DebugGame Build",
 			"args": [
 			],
@@ -36,7 +36,7 @@
 		{
 			"name": "Launch SiShot (Development)",
 			"request": "launch",
-			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame.exe",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\Binaries\\Win64\\UnrealGame.exe",
 			"preLaunchTask": "SiShot Win64 Development Build",
 			"args": [
 			],
@@ -52,7 +52,7 @@
 		{
 			"name": "Launch SiShot (Test)",
 			"request": "launch",
-			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
 			"preLaunchTask": "SiShot Win64 Test Build",
 			"args": [
 			],
@@ -68,7 +68,7 @@
 		{
 			"name": "Launch SiShot (Shipping)",
 			"request": "launch",
-			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"program": "E:\\Unreal_Engine_Projects\\Si-Shot\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
 			"preLaunchTask": "SiShot Win64 Shipping Build",
 			"args": [
 			],
@@ -87,7 +87,7 @@
 			"program": "D:\\EpicGames\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
 			"preLaunchTask": "SiShotEditor Win64 Debug Build",
 			"args": [
-				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\SiShot.uproject"
+				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot.uproject"
 			],
 			"cwd": "D:\\EpicGames\\UE_5.0",
 			"stopAtEntry": false,
@@ -104,7 +104,7 @@
 			"program": "D:\\EpicGames\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
 			"preLaunchTask": "SiShotEditor Win64 DebugGame Build",
 			"args": [
-				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\SiShot.uproject"
+				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot.uproject"
 			],
 			"cwd": "D:\\EpicGames\\UE_5.0",
 			"stopAtEntry": false,
@@ -121,7 +121,7 @@
 			"program": "D:\\EpicGames\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
 			"preLaunchTask": "SiShotEditor Win64 Development Build",
 			"args": [
-				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\SiShot.uproject"
+				"E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot.uproject"
 			],
 			"cwd": "D:\\EpicGames\\UE_5.0",
 			"stopAtEntry": false,
@@ -140,7 +140,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot\\SiShot.uproject",
+				"-project=E:\\Unreal_Engine_Projects\\Si-Shot\\SiShot.uproject",
 				"-game",
 				"-engine"
 			],
