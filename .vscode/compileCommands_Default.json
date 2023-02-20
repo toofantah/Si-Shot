@@ -1,5 +1,45 @@
 [
 	{
+		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\BTService_PlayerLocation.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
+		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\BTService_PlayerLocation.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
+		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\BTService_PlayerLocationIfSeen.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
+		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\BTService_PlayerLocationIfSeen.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
+		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\BTTask_ClearBlackboardValue.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
+		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\BTTask_ClearBlackboardValue.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
+		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\BTTask_Shoot.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
+		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\BTTask_Shoot.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
+		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
+	},
+	{
 		"file": "E:\\Unreal_Engine_Projects\\Si-Shot\\Source\\SiShot\\Gun.cpp",
 		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default\\SiShot.211.rsp",
 		"directory": "D:\\EpicGames\\UE_5.0\\Engine\\Source"
