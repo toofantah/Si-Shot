@@ -2,6 +2,9 @@
 
 
 #include "Soldier.h"
+#include "Gun.h"
+
+
 
 // Sets default values
 ASoldier::ASoldier()
@@ -15,7 +18,16 @@ ASoldier::ASoldier()
 void ASoldier::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	Health = MaxHealth;
+	Gun = GetWorld()-> SpawnActor<AGun>(GunClass);
+	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None); 
+	Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("weapon_rSocket"));
+	Gun->SetOwner(this);
+}
+
+bool ASoldier::IsDead() const
+{
+	return Health <= 0;
 }
 
 // Called every frame
@@ -23,6 +35,14 @@ void ASoldier::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+float ASoldier::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser)
+{
+	float TakenDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	float DamageToApply = FMath::Min(Health, TakenDamage);
+	Health -= DamageToApply;
+	return Health;
 }
 
 // Called to bind functionality to input
@@ -40,6 +60,7 @@ void ASoldier::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 
 	PlayerInputComponent -> BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this,&ACharacter::Jump);
+	PlayerInputComponent -> BindAction(TEXT("Fire"), EInputEvent::IE_Pressed, this,&ASoldier::Shoot);
 
 }
 
@@ -61,4 +82,9 @@ void ASoldier::LookUpRate(float AxisValue)
 void ASoldier::LookRightRate(float AxisValue)
 {
 	AddControllerYawInput( AxisValue * RotationRate * GetWorld() -> GetDeltaSeconds());
+}
+
+void ASoldier::Shoot()
+{
+	Gun -> PullTrigger();
 }
