@@ -8,7 +8,7 @@ public class SiShot : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "GamePlayTasks" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "GameplayTasks","AIModule" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
