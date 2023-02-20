@@ -25,6 +25,11 @@ void ASoldier::BeginPlay()
 	Gun->SetOwner(this);
 }
 
+bool ASoldier::IsDead() const
+{
+	return Health <= 0;
+}
+
 // Called every frame
 void ASoldier::Tick(float DeltaTime)
 {
@@ -36,7 +41,8 @@ float ASoldier::TakeDamage(float DamageAmount, struct FDamageEvent const& Damage
 {
 	float TakenDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	float DamageToApply = FMath::Min(Health, TakenDamage);
-	return Health - DamageToApply;
+	Health -= DamageToApply;
+	return Health;
 }
 
 // Called to bind functionality to input

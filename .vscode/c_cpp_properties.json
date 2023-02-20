@@ -12,8 +12,7 @@
             "intelliSenseMode": "msvc-x64",
             "compileCommands": "E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default.json",
             "cStandard": "c17",
-            "cppStandard": "c++17",
-            "configurationProvider": "ms-vscode.makefile-tools"
+            "cppStandard": "c++17"
         }
     ],
     "version": 4
