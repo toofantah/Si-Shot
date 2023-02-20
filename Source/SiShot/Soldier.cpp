@@ -43,7 +43,7 @@ float ASoldier::TakeDamage(float DamageAmount, struct FDamageEvent const& Damage
 	float TakenDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	float DamageToApply = FMath::Min(Health, TakenDamage);
 	Health -= DamageToApply;
-	if(IsDead){
+	if(IsDead()){
 		DetachFromControllerPendingDestroy(); // Detaching Controller
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision); //Deactivating Capusle Colision
 	}
