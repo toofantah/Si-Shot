@@ -5,7 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
-
+#include "Soldier.h"
 void ASoldierAiController::BeginPlay()
 {
     Super::BeginPlay();
@@ -27,6 +27,16 @@ void ASoldierAiController::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
+}
+
+bool ASoldierAiController::IsDead() const
+{
+    //Check the Pawn and return if its dead
+    ASoldier* Soldier = Cast<ASoldier>(GetPawn());
+    if(Soldier != nullptr){
+        return Soldier->IsDead();
+    }
+    return true;
 }
     
 
