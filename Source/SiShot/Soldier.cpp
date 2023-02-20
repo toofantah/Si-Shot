@@ -32,6 +32,11 @@ bool ASoldier::IsDead() const
 	return Health <= 0;
 }
 
+float ASoldier::GetHealthPercent() const
+{
+	return Health / MaxHealth;
+}
+
 // Called every frame
 void ASoldier::Tick(float DeltaTime)
 {

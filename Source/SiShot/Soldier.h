@@ -24,6 +24,9 @@ protected:
 public:	
 	UFUNCTION(BlueprintPure)
 	bool IsDead() const;
+
+	UFUNCTION(BlueprintPure)
+	float GetHealthPercent() const;
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -46,4 +49,5 @@ private:
 	UPROPERTY(VisibleAnywhere) float Health;
 	UPROPERTY(EditDefaultsOnly) TSubclassOf<AGun> GunClass;
 	UPROPERTY() AGun* Gun;
+
 };

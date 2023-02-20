@@ -5,10 +5,20 @@
 #include "TimerManager.h"
 #include "Blueprint/UserWidget.h"
 
+void ASiShotPlayerController::BeginPlay()
+{
+    Super::BeginPlay();
+    HUD = CreateWidget(this, HUDClass);
+    if(HUD != nullptr)
+    {
+        HUD -> AddToViewport();
+    }
+}
+
 void ASiShotPlayerController::GameHasEnded(class AActor* EndGameFocus, bool IsWinner)
 {
     Super::GameHasEnded(EndGameFocus,IsWinner);
-
+    HUD->RemoveFromViewport();
     if(IsWinner)
     {
 
@@ -17,6 +27,7 @@ void ASiShotPlayerController::GameHasEnded(class AActor* EndGameFocus, bool IsWi
         {
             WScreen -> AddToViewport();
         }
+
     }
     else
     {
@@ -30,3 +41,5 @@ void ASiShotPlayerController::GameHasEnded(class AActor* EndGameFocus, bool IsWi
  
     GetWorldTimerManager().SetTimer(ResetTimer, this, &APlayerController::RestartLevel, RestartDelay);
 }
+
+
