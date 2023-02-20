@@ -4,6 +4,7 @@
 #include "Soldier.h"
 #include "Gun.h"
 #include "Components/CapsuleComponent.h"
+#include "SiShotGameModeBase.h"
 
 
 
@@ -44,8 +45,13 @@ float ASoldier::TakeDamage(float DamageAmount, struct FDamageEvent const& Damage
 	float DamageToApply = FMath::Min(Health, TakenDamage);
 	Health -= DamageToApply;
 	if(IsDead()){
+		ASiShotGameModeBase* GameMode = GetWorld()->GetAuthGameMode<ASiShotGameModeBase>();
+		if(GameMode != nullptr){
+			GameMode -> PawnKilled(this);
+		}
 		DetachFromControllerPendingDestroy(); // Detaching Controller
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision); //Deactivating Capusle Colision
+
 	}
 	return Health;
 }

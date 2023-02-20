@@ -14,4 +14,6 @@ class SISHOT_API ASiShotGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+public:
+	virtual void PawnKilled(APawn* Pawn);
 };

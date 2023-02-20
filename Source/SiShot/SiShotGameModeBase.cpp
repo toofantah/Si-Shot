@@ -3,3 +3,8 @@
 
 #include "SiShotGameModeBase.h"
 
+
+void ASiShotGameModeBase::PawnKilled(APawn* Pawn)
+{
+    
+}
