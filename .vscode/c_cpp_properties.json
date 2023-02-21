@@ -1,15 +1,14 @@
 {
-    "configurations": [
-        {
-            "name": "SiShotEditor Editor Win64 Development (SiShot)",
-            "intelliSenseMode": "msvc-x64",
-            "compileCommands": "E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_SiShot.json"
-        },
-        {
-            "name": "Win32",
-            "intelliSenseMode": "msvc-x64",
-            "compileCommands": "E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default.json"
-        }
-    ],
-    "version": 4
+	"configurations": [
+		{
+			"name": "SiShotEditor Editor Win64 Development (SiShot)",
+			"intelliSenseMode": "msvc-x64",
+			"compileCommands": "E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_SiShot.json"
+		},
+		{
+			"name": "Win32",
+			"intelliSenseMode": "msvc-x64",
+			"compileCommands": "E:\\Unreal_Engine_Projects\\Si-Shot\\.vscode\\compileCommands_Default.json"
+		}
+	]
 }
